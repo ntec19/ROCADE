@@ -24,9 +24,9 @@ Le projet consiste à fournir une solution en Python pour :
 
 - Le fichier `wakeup.py` permet d'envoyer le `magic packet WOL` à toutes les adresses physiques concernées. La bibliothèque Python [`wakeonlan`](https://pypi.org/project/wakeonlan/) est nécessaire.
 
-- Le fichier `scan.py` permet, s'il est appelé directement, de lister les PC allumés (nom, adresse MAC, adresse IP). Lorsqu'il est importé, il a pour objet de fournir le dictionnaire `dict_resultat` au script appelant.
+- Le fichier `scan.py` permet, s'il est appelé directement, de lister les PC allumés (nom, adresse MAC, adresse IP). Lorsqu'il est importé, il a pour objet de fournir le dictionnaire `dict_resultat` au script appelant. La bibliothèque [`nmap`](https://pypi.org/project/python-nmap/) est nécessaire.
 
-- Le fichier `remote.py` exécute à distance _(via ssh)_ une ou plusieurs mêmes commandes sur les PC concernés.
+- Le fichier `remote.py` exécute à distance _(via ssh)_ une ou plusieurs mêmes commandes sur les PC concernés. La bibliothèque [`paramiko`](https://pypi.org/project/paramiko/) est nécessaire.
 
 ----
 
